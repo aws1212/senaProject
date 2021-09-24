@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, 
+        minimum-scale=1.0"> 
+        <title>Buzón de aprendices</title>
+
+        <!--Hola Dalto, la aplicación funcionaba por php a un servidor, 
+        ahora las peticiones no se realizan porque el servidor a caducado-->
+
+        <link rel="stylesheet" href="css/style_general.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleResolution100.css">
+        <link rel="stylesheet" href="css/styleResolution200.css">
+        <link rel="stylesheet" href="css/styleResolution300.css">
+        <link rel="stylesheet" href="css/styleResolution400.css">
+        <link rel="stylesheet" href="css/styleResolution500.css">
+        <link rel="stylesheet" href="css/styleResolution600.css">
+        <link rel="stylesheet" href="css/styleResolution700.css">
+
+    </head>
+
+    <body class="body bg-blue-200">
+
+        <!-- NAV -->        
+        <nav class="flex items-center justify-between bg-blue-500 h-1/4 w-full absolute">
+            <div class="flex items-center flex-shrink-0 text-white bg-blue-500 h-full w-full absolute">
+                <div class="bg-blue-200 h-full w-1/3 relative text-center p-1 overflow-auto float-left">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 sm:text-xl md:text-2xl lg:text-2xl tittleNav">Visión</h2>
+                    <p class="relative text-black tracking-tight font-mono top-0 textNav">
+                        A partír del año 2021 el representante aprendices del CTT
+                        conocerá quejas, inquietudes, sugerencias y opiniones
+                        del aprendiz para brindar apoyo, orientación y seguimiento
+                        a estas y contribuir así en el proceso de formación integral.
+                    </p>
+                </div>
+                <div class="relative bg-blue-500 h-full w-1/3 cursor-pointer float-left">
+                    <img src="image/logo.png" class="relative h-full w-full" id="btn_principal_image">
+                </div>    
+                <div class="bg-blue-200 h-full w-1/3 relative text-center p-1 overflow-auto">
+                    <h4 class="relative font-semibold text-black tracking-tight font-mono top-0 sm:text-xl md:text-2xl lg:text-2xl tittleNav">Misión</h4>
+                    <p class="relative text-black tracking-tight font-mono top-0 textNav">
+                        El representante de aprendices del Centro
+                        de Tecnologias del Transporte a través del buzón CTT
+                        será el canal de comunicación e interlocutor
+                        entre los estamentos de la comunidad educativa y los
+                        aprendices con el fin de aportar en el proceso de formación.
+                    </p>
+                </div>            
+            </div>
+        </nav>      
+        
+        
+        <!-- DIRECT LINKS -->
+        <div class="h-3/4 w-1/5 top-1/4 bg-blue-500 absolute" id="div_images_left" >     
+            <div class="top-0 relative h-1/5 bg-blue-600">
+                <a href="https://sena.territorio.la/index.php?login=true" target="_self"><img src="image/territorio.png" class="h-full w-full relative"></a>
+            </div>    
+            <div class="top-0 relative top-1/5 h-1/5 bg-blue-600" id="box_img_jornada_diurna">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_diurna">
+                    <img id="img_jornada_diurna" src="image/img_jornada_diurna.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>   
+            <div class="top-0 relative top-1/5 h-1/5 bg-blue-600" id="box_img_jornada_mixta">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_mixta">
+                    <img id="img_jornada_mixta" src="image/img_jornada_mixta.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>
+            <div class="top-0 relative top-1/5 h-1/5 bg-blue-600" id="box_img_jornada_nocturna">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_nocturna">
+                    <img id="img_jornada_nocturna" src="image/img_jornada_nocturna.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>                      
+            <div class="top-0 relative top-4/5 h-1/5 bg-blue-500">
+                <img src="image/blog.png" class="h-full w-full relative cursor-pointer">
+            </div>    
+        </div>
+        
+        <!-- Tips
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: block;" id="search_box">
+            <div class="relative h-full w-full bg-blue-400">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleSedes">INSTRUCTORES COLABORADORES</h2>
+                </div>
+                <div class="relative w-full h-3/5 bg-blue-200 overflow-y-scroll">
+                    <div class="relative w-full h-1/4 bg-blue-100">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 float-left textSedes">Nombre Instructora</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_cazuca" src="image/instructora.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0  top-1/4 textSedes">Nombre Instructor</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_ecci" src="image/instructor.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-blue-100">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">Nombre Instructora</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_7agosto" src="image/instructora.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">Nombre Instructor</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_fontibon" src="image/instructor.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">Nombre Instructora</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_fontibon" src="image/instructora.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">Nombre Instructor</h2>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                            <img id="img_fontibon" src="image/instructor.png" class="relative cursor-pointer" style="width: 30%; height: 98%;">
+                        </div>
+                    </div>
+                </div>   
+                <div class="relative w-full h-1/5 bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200 float-left">
+                        <div class="relative h-full w-full">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_cargo" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnExitCargos" type="button" value="Volver">
+                        </div>
+                    </div>
+                </div>             
+            </div>            
+        </div> -->
+
+        <!-- SEDES -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: block;" id="search_box">
+            <div class="relative h-full w-full bg-blue-400">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleSedes">SEDE DE FORMACIÓN</h2>
+                </div>
+                <div class="relative w-full top-1/5 h-1/5 bg-blue-100">
+                    <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                        <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 float-left textSedes">SEDE CAZUCA</h2>
+                    </div>
+                    <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                        <img id="img_cazuca" src="image/cazuca.jpg" class="relative cursor-pointer" style="width: 98%; height: 98%;">
+                    </div>
+                </div>
+                <div class="relative w-full top-2/5 h-1/5 bg-blue-200">
+                    <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                        <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0  top-1/4 textSedes">SEDE ECCI</h2>
+                    </div>
+                    <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                        <img id="img_ecci" src="image/ecci.jpg" class="relative cursor-pointer" style="width: 98%; height: 98%;">
+                    </div>
+                </div>
+                <div class="relative w-full top-3/5 h-1/5 bg-blue-100">
+                    <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                        <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">SEDE 7 DE AGOSTO</h2>
+                    </div>
+                    <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                        <img id="img_7agosto" src="image/7agosto.jpg" class="relative cursor-pointer" style="width: 98%; height: 98%;">
+                    </div>
+                </div>
+                <div class="relative w-full top-4/5 h-1/5 bg-blue-200">
+                    <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                        <h2 class="relative left-1/4 font-semibold text-black tracking-tight font-mono top-0 top-1/4 textSedes">SEDE FONTIBÓN</h2>
+                    </div>
+                    <div class="absolute left-1/2 h-full w-1/2 bg-blue-200" style="padding: 1%;">
+                        <img id="img_fontibon" src="image/fontibon.jpg" class="relative cursor-pointer" style="width: 98%; height: 98%;">
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <!-- COMMMENT -->
+
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-500 absolute" style="display: none;" id="question_box">
+            <div class="relative h-full w-full bg-blue-400">
+                <form class="relative h-full w-full bg-blue-400" id="form_comment" name="form_comment">
+                    <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleMessage">REALICE SU INTERVENCIÓN DE FORMA CLARA Y RESPETUOSA, GRACIAS</h2>
+                    </div>
+                    <div class="relative w-full h-4/5 bg-blue-100 text-center">
+                        <div class="relative w-full h-1/4 bg-blue-100">
+                            <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                                <div class="relative h-1/3 w-full bg-blue-600">
+                                    <select id="txt_tipId" class="relative h-full w-full bg-yellow-100 textDataMessage">
+                                        <option selected>Tipo ID</option>
+                                        <option>TI</option>
+                                        <option>CC</option>
+                                    </select>
+                                </div>
+                                <div class="relative h-1/3 w-full bg-blue-500">
+                                    <input class="relative h-full w-full bg-yellow-100 textDataMessage"  id="txt_numId" type="text" placeholder="Numero ID" onkeypress="return solonumeros(event)" onpaste="return false">
+                                </div>
+                                <div class="relative h-1/3 w-full bg-blue-400">
+                                    <select class="relative h-full w-full bg-yellow-100 textDataMessage"  id="txt_genero">
+                                        <option selected>Genero</option>
+                                        <option>Femenino</option>
+                                        <option>Masculino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">
+                                <div class="relative h-1/2 w-full bg-blue-400">
+                                    <input id="txt_name" class="relative h-full w-full bg-yellow-100 textDataMessage"  type="text" placeholder="Nombres" onkeypress="return sololetras(event)" onpaste="return false"> 
+                                </div>
+                                <div class="relative h-1/2 w-full bg-blue-500">
+                                    <input id="txt_lastname" class="relative h-full w-full bg-yellow-100 textDataMessage"  type="text" placeholder="Apellidos" onkeypress="return sololetras(event)" onpaste="return false">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative w-full h-1/4 bg-blue-100">
+                            <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                                <div class="relative h-1/3 w-full bg-blue-600 textDataMessage">
+                                    <select id="txt_jornada" class="relative h-full w-full bg-yellow-100" >
+                                        <option selected>Jornada</option>
+                                        <option>Diurna</option>
+                                        <option>Mixta</option>
+                                        <option>Nocturna</option>
+                                    </select>
+                                </div>
+                                <div class="relative h-1/3 w-full bg-blue-500">
+                                    <input class="relative h-full w-full bg-yellow-100 textDataMessage" id="txt_sede" type="text" placeholder="Sede" readonly>
+                                </div>
+                                <div class="relative h-1/3 w-full bg-blue-400">
+                                    <input id="txt_numFicha" class="relative h-full w-full bg-yellow-100 textDataMessage"  type="text" placeholder="Num. Ficha" onkeypress="return solonumeros(event)" onpaste="return false">
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">
+                                <div class="relative h-1/2 w-full bg-blue-400">
+                                    <select id="txt_tipOpinion" class="relative h-full w-full bg-yellow-100 textDataMessage" >
+                                        <option selected>Tipo de aporte</option>
+                                        <option>Sugerencia</option>
+                                        <option>Inquietud</option>
+                                        <option>Petición</option>
+                                        <option>Situación especial</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="relative h-1/2 w-full bg-blue-500">
+                                    <input id="txt_programa" class="relative h-full w-full bg-yellow-100 textDataMessage"  type="text" placeholder="Programa de formación" onkeypress="return sololetras(event)" onpaste="return false">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative w-full h-1/4 bg-blue-100">
+                            <textarea id="txt_comentario" class="h-full w-full relative bg-yellow-100 textDataMessage"  placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="relative w-full h-1/4 bg-blue-100">
+                            <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                                <div class="relative h-full w-full">
+                                    <input id="btn_exit_sede" onmouseover="dentro(this)" onmouseout="fuera(this)" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnDataMessage"  type="button" value="Volver">
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">                            
+                                <div class="relative h-full w-full">
+                                    <input type="submit" onmouseover="dentro(this)" onmouseout="fuera(this)" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnDataMessage"  value="Envíar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ANSWER -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-500 absolute" style="display: none;" id="answer-div">
+            <div class="relative h-full w-full bg-blue-400">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleAnswer">CONOZCA LA RESPUESTA A SU MENSAJE</h2>
+                </div>
+                <form class="relative h-1/5 top-1/5 w-full bg-blue-400" id="form_search" name="form_search">
+                    <div class="relative h-full w-full bg-blue-200">
+                        <div class="relative h-1/2 w-full bg-blue-200">
+                            <div class="relative h-full w-1/3 float-left bg-green-100">
+                                <input id="txt_Id_search" class="relative h-full w-full bg-yellow-100 textAnswer" type="text" placeholder="Num.Documento" onkeypress="return solonumeros(event)" onpaste="return false">
+                            </div>
+                            <div class="relative h-full w-1/3 float-left bg-red-400"> 
+                                <input id="txt_cod_message" class="relative h-full w-full bg-yellow-100 textAnswer" type="text" placeholder="Cod. Mensaje" onkeypress="return solonumeros(event)" onpaste="return false">
+                            </div>                            
+                            <div class="absolute h-full w-1/3 left-2/3 bg-blue-500">
+                                <input id="txt_jornada_serch" class="relative h-full w-full bg-yellow-100 textAnswer" type="text" placeholder="Jornada" readonly>
+                            </div>
+                        </div>   
+                        <div class="relative h-1/2 w-full bg-blue-500">
+                            <div class="relative h-full w-1/3 float-left bg-yellow-900">
+                                <input id="btn_exit_search" onmouseover="dentro(this)" onmouseout="fuera(this)" class="relative h-full w-full float-left bg-yellow-300 cursor-pointer btnAnswer" type="button" value="Volver">
+                            </div>
+                            <div class="relative h-full w-1/3 bg-blue-400 float-left">
+                                <input id="txt_aprendicce_search" class="relative h-full w-full bg-yellow-100 textAnswer" placeholder="Nombre del aprendiz" type="text" readonly>
+                            </div>
+                            <div class="absolute h-full left-2/3 w-1/3 bg-blue-200">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" class="relative h-full w-full bg-yellow-300 cursor-pointer btnAnswer" type="submit" value="Buscar">
+                            </div>                            
+                        </div>             
+                    </div>
+                </form>
+                <div class="relative h-3/5 w-full bg-blue-200">
+                    <div class="relative h-1/2 w-full bg-blue-300">
+                        <textarea id="txt_message_aprendicce" class="relative h-full w-full bg-yellow-100 textAnswer" placeholder="Mensaje del aprendiz" readonly></textarea>
+                    </div>
+                    <div class="relative h-1/2 w-full bg-blue-100">
+                        <textarea id="txt_message_represent" class="relative h-full w-full bg-yellow-100 textAnswer" placeholder="Respuesta" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- CARGOS -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: none;" id="cargo_box">
+            <div class="relative h-full w-full bg-yellow-200">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleCargo">ELIJA EL CARGO QUE OCUPA</h2>
+                </div>
+                <div class="relative w-full h-3/5 bg-blue-100 text-center">
+                    <div class="absolute w-1/3 top-1/5 h-full bg-yellow-100 float-left">
+                        <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono textCargos">FUNCIONARIO</h2>
+                        </div>
+                        <div class="relative w-full h-4/5 bg-blue-200">
+                            <img id="img_funcionario" src="image/funcionario.png" class="relative h-full w-full cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="absolute w-1/3 top-1/5 h-full bg-yellow-100 left-1/3">
+                        <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono textCargos">REPRESENTANTE</h2>
+                        </div>
+                        <div class="relative w-full h-4/5 bg-blue-200">
+                            <img id="img_representante" src="image/representante.png" class="relative h-full w-full cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="absolute w-1/3 top-1/5 h-full bg-yellow-100 left-2/3">
+                        <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono textCargos">VOCERO</h2>
+                        </div>
+                        <div class="relative w-full h-4/5 bg-blue-200">
+                            <img id="img_vocero" src="image/vocero.png" class="relative h-full w-full cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative w-full h-1/5 bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200 float-left">
+                        <div class="relative h-full w-full">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_cargo" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnExitCargos" type="button" value="Volver">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                 
+        </div>
+
+        <!-- CODE FUNCIONARIO -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: none;" id="code_funcionario_box">
+            <form class="h-full w-full absolute" id="btn_code_funcionario" name="btn_code_funcionario">
+                <div class="relative h-full w-full bg-yellow-200">
+                    <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleCode">INSERTE EL CODIGO</h2>
+                    </div>
+                    <div class="relative w-full h-3/5 bg-blue-100 text-center">
+                        <div class="absolute w-full top-1/5 h-full bg-yellow-100 float-left">
+                            <input id="txt_code_funcionario" class="relative h-full w-full bg-yellow-100 text-center txtCode" type="text" placeholder="SR(A) FUNCIONARIO(A)" onkeypress="return solonumeros(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/5 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_code_funcionario" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" type="button" value="Volver">
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">                            
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" type="submit" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" value="Ingresar">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+
+        <!-- CODE REPRESENTANTE -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: none;" id="code_representante_box">
+            <form class="h-full w-full absolute" id="btn_code_representante" name="btn_code_representante">
+                <div class="relative h-full w-full bg-yellow-200">
+                    <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleCode">INSERTE EL CODIGO</h2>
+                    </div>
+                    <div class="relative w-full h-3/5 bg-blue-100 text-center">
+                        <div class="absolute w-full top-1/5 h-full bg-yellow-100 float-left">
+                            <input id="txt_code_representante" class="relative h-full w-full bg-yellow-100 text-center txtCode" type="text" placeholder="SR(A) REPRESENTANTE" onkeypress="return solonumeros(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/5 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_code_representante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" type="button" value="Volver">
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">                            
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" type="submit" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" value="Ingresar">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+
+        <!-- CODE VOCERO -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: none;" id="code_vocero_box">
+            <form class="h-full w-full absolute" id="btn_code_vocero" name="btn_code_vocero">
+                <div class="relative h-full w-full bg-yellow-200">
+                    <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 tittleCode">INSERTE EL CODIGO</h2>
+                    </div>
+                    <div class="relative w-full h-3/5 bg-blue-100 text-center">
+                        <div class="absolute w-full top-1/5 h-full bg-yellow-100 float-left">
+                            <input id="txt_code_vocero" class="relative h-full w-full bg-yellow-100 text-center txtCode" type="text" placeholder="SR(A) VOCERO(A)" onkeypress="return solonumeros(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/5 bg-blue-200">
+                        <div class="relative h-full w-1/2 bg-blue-200 float-left">
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_code_vocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" type="button" value="Volver">
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 h-full w-1/2 bg-blue-300">                            
+                            <div class="relative h-full w-full">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" type="submit" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnCode" value="Ingresar">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+
+        <!-- INPAGE FUNCIONARIO -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-400 absolute" style="display: none;" id="inpage_officer_box">
+            <div class="relative h-2/5 w-full bg-yellow-200">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono tittleRegister">REGISTRO DE VOCEROS</h2>
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200">
+                    <img id="img_vocero_diurna" src="image/vocero_diurna.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200 left-1/3">
+                    <img id="img_vocero_mixta" src="image/vocero_mixta.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200 left-2/3">
+                    <img id="img_vocero_nocturna" src="image/vocero_nocturna.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+            </div>
+            <div class="relative h-2/5 w-full bg-yellow-400">
+                <div class="relative w-full h-1/5 bg-blue-200 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono tittleRegister">REGISTRO DE REPRESENTANTES</h2>
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200">
+                    <img id="img_representante_diurna" src="image/representante_diurna.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200 left-1/3">
+                    <img id="img_representante_mixta" src="image/representante_mixta.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+                <div class="absolute h-4/5 w-1/3 bg-blue-200 left-2/3">
+                    <img id="img_representante_nocturna" src="image/representante_nocturna.jpg" class="relative h-full w-full cursor-pointer">
+                </div>
+            </div>
+            <div class="absolute w-full h-1/5 bg-blue-200">
+                <div class="relative h-full w-full bg-blue-200">
+                    <div class="relative h-full w-1/2 float-left">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_inpage_officer" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnRegister" type="button" value="Volver">
+                    </div>
+                    <div class="absolute h-full w-1/2 left-1/2">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_archivo_officer_box" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnRegister" type="button" value="Archivo">
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+        <!-- REGISTER VOCERO -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-200 absolute" style="display: none;" id="register_vocero_box">
+            <form class="absolute h-full w-full" id="form_code_vocero" name="form_code_vocero"> 
+                <div class="relative h-1/5 w-full bg-blue-200 text-center">
+                    <div class="relative h-full w-full">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono tittleNewVocero">GENERAR CODIGO PARA EL VOCERO</h2>
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200  text-center">
+                        <input id="txt_jornada_vocero" class="relative h-full w-full bg-yellow-100 textNewVocero" type="text" placeholder="Jornada">
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">                    
+                    <div class="absolute h-full w-full bg-blue-200">
+                        <input id="txt_newcode_vocero" class="relative h-full w-full bg-yellow-100 text-yellow-600 textNewVocero" type="text" placeholder="Código" readonly>
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">
+                    <div class="absolute h-full w-full bg-blue-500">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_create_codevocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnNewVocero"  type="submit" value="Generar">
+                    </div>
+                </div>
+                <div class="absolute w-full h-1/5 bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200">
+                        <div class="relative h-full w-full float-left">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_newvocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnNewVocero"  type="button" value="Volver">
+                        </div>
+                    </div>
+                </div> 
+            </form>
+        </div> 
+
+        <!-- REGISTER REPRESENTANTE -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-200 absolute" style="display: none;" id="register_representante_box">
+            <form class="absolute h-full w-full" id="form_code_representante" name="form_code_representante" enctype="multipart/form-data"> 
+                <div class="relative h-1/5 w-full bg-blue-200 text-center">
+                    <div class="relative h-full w-full">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono tittleNewRepre" >GENERAR CODIGO PARA EL REPRESENTANTE</h2>
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">
+                    <div class="absolute h-full w-full bg-yellow-100">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_img_coderepresentante" name="btn_img_coderepresentante" class="relative h-full w-full cursor-pointer bg-yellow-100 border-black top-1/3 textNewRepre"  type="file" accept="image/jpg" required> 
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">
+                    <div class="relative h-full w-1/2 bg-blue-200 float-left text-center">
+                        <input id="txt_jornada_representante" name="txt_jornada_representante" class="relative h-full w-full bg-yellow-100 textNewRepre"  type="text" placeholder="Jornada">
+                    </div>
+                    <div class="absolute h-full w-1/2 bg-blue-200 left-1/2">
+                        <input id="txt_newcode_representante" class="relative h-full w-full bg-yellow-100 text-yellow-600 textNewRepre" type="text" placeholder="Código" readonly>
+                    </div>
+                </div>
+                <div class="relative h-1/5 w-full bg-blue-200">                    
+                    <div class="absolute h-full w-full bg-blue-500">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_create_coderepresentante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnNewRepre"  type="submit" value="Generar">
+                    </div>
+                </div>
+                <div class="absolute w-full h-1/5 bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200">
+                        <div class="relative h-full w-full">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_exit_newrepresentante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnNewRepre"  type="button" value="Volver">
+                        </div>
+                    </div>
+                </div> 
+            </form>
+        </div> 
+
+         <!-- DIURNA VOCERO -->
+         <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-200 absolute" style="display: none;" id="diurna_vocero_box">
+                <form class="relative h-full w-full">
+
+                <div class="relative h-1/5 w-full bg-blue-200 text-center">
+                    <div class="relative h-full w-full">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono tittleViewMessage" >MENSAJES</h2>
+                    </div>
+                </div>
+                <div class="relative h-2/5 w-full bg-blue-200">
+                    <div class="absolute h-full w-1/2 float-left bg-blue-200">
+                        <div class="relative h-1/5 w-full bg-blue-100">
+                            <input id="txt_name_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Nombres" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-200">
+                            <input id="txt_lastname_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Apellidos" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-300">
+                            <input id="txt_id_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Identificación" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-400">
+                            <input id="txt_sede_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Sede" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-500">
+                            <input id="txt_jornada_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Jornada" readonly>
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-1/2 left-1/2 bg-blue-200">
+                        <div class="relative h-1/5 w-full bg-blue-100">
+                            <input id="txt_ficha_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Ficha" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-200">
+                            <input id="txt_program_diurna_Vocero" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Programa" readonly>
+                        </div>
+                        <div class="relative h-3/5 w-full bg-blue-300">
+                            <textarea id="txt_comentario_diurna_Vocero" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Mensaje" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+                    <div class="relative h-1/5 w-full bg-blue-200">
+                            <div id="box_delete_diurna_Vocero" class="absolute h-full w-1/2 float-left" id="formDelete_diurna_Vocero" name="formDelete_diurna_Vocero">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_delete_diurna_Vocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="submit" value="Eliminar">
+                            </div>                  
+                        <div class="absolute h-full w-1/2 bg-blue-500 left-1/2">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_responder_diurna_Vocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="button" value="Responder">
+                        </div>
+                    </div>            
+                    <div class="absolute w-full h-1/5 bg-blue-200">
+                        <div class="relative h-full w-full bg-blue-200">
+                            <div class="relative h-full w-1/2 float-left">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_volver_diurna_Vocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="button" value="Volver">
+                            </div>
+                            <div id="box_respuesta_diurna_Vocero" class="absolute h-full w-1/2 bg-blue-500 float left" style="display: none;">
+                                <textarea id="txt_respuesta_diurna_Vocero" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Respuesta"></textarea>
+                            </div>
+                                <div id="box_escalar_diurna_Vocero" class="absolute h-full w-1/2 float-left left-1/2" style="display: block;" id="formUp_diurna_Vocero" name="formUp_diurna_Vocero">
+                                    <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_escalar_diurna_Vocero" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="submit" value="Escalar">
+                                </div>
+                                <div class="absolute h-full w-1/2 float-left left-1/2" id="formSend_diurna_Vocero" style="display: none;" name="formSend_diurna_Vocero">
+                                    <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_enviar_diurna_Vocero" class="relative h-full w-full cursor-pointer bg-yellow-600 border-black btnViewMessage"  type="submit" value="Envíar">
+                                </div>
+                        </div>
+                    </div>
+                </form>
+        </div>
+
+        <!-- DIURNA REPRESENTANTE -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-200 absolute" style="display: none;" id="diurna_representante_box">
+            <form class="relative h-full w-full">
+            <div class="relative h-1/5 w-full bg-blue-200 text-center">
+                <div class="relative h-full w-full">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono tittleViewMessage" >MENSAJES</h2>
+                </div>
+            </div>
+            <div class="relative h-2/5 w-full bg-blue-200">
+                <div class="absolute h-full w-1/2 float-left bg-blue-200">
+                    <div class="relative h-1/5 w-full bg-blue-100">
+                        <input id="txt_name_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage" type="text" placeholder="Nombres" readonly>
+                    </div>
+                    <div class="relative h-1/5 w-full bg-blue-200">
+                        <input id="txt_lastname_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Apellidos" readonly>
+                    </div>
+                    <div class="relative h-1/5 w-full bg-blue-300">
+                        <input id="txt_id_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Identificación" readonly>
+                    </div>
+                    <div class="relative h-1/5 w-full bg-blue-400">
+                        <input id="txt_sede_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage" type="text" placeholder="Sede" readonly>
+                    </div>
+                    <div class="relative h-1/5 w-full bg-blue-500">
+                        <input id="txt_jornada_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Jornada" readonly>
+                    </div>
+                </div>
+                <div class="absolute h-full w-1/2 left-1/2 bg-blue-200">
+                    <div class="relative h-1/5 w-full bg-blue-100">
+                        <input id="txt_ficha_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Ficha" readonly>
+                    </div>
+                    <div class="relative h-1/5 w-full bg-blue-200">
+                        <input id="txt_program_diurna_Representante" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Programa" readonly>
+                    </div>
+                    <div class="relative h-3/5 w-full bg-blue-300">
+                        <textarea id="txt_comentario_diurna_Representante" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Mensaje" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+                <div class="relative h-1/5 w-full bg-blue-200">
+                        <div id="box_delete_diurna_Representante" class="absolute h-full w-1/2 float-left" id="formDelete_diurna_Representante" name="formDelete_diurna_Representante">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_delete_diurna_Representante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="submit" value="Eliminar">
+                        </div>                    
+                    <div class="absolute h-full w-1/2 bg-blue-500 left-1/2">
+                        <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_responder_diurna_Representante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="button" value="Responder">
+                    </div>
+                </div>            
+                <div class="absolute w-full h-1/5 bg-blue-200">
+                    <div class="relative h-full w-full bg-blue-200">
+                        <div class="relative h-full w-1/2 float-left">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_volver_diurna_Representante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="button" value="Volver">
+                        </div>
+                        <div id="box_respuesta_diurna_Representante" class="absolute h-full w-1/2 bg-blue-500 float left" style="display: none;">
+                            <textarea id="txt_respuesta_diurna_Representante" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Respuesta"></textarea>
+                        </div>
+                            <div id="box_escalar_diurna_Representante" class="absolute h-full w-1/2 float-left left-1/2" id="formUp_diurna_Representante" name="formUp_diurna_Representante" style="display: block;">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_escalar_diurna_Representante" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="submit" value="Escalar">
+                            </div>
+                            <div class="absolute h-full w-1/2 float-left left-1/2" id="formSend_diurna_Representante" style="display: none;" name="formSend_diurna_Representante">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_enviar_diurna_Representante" class="relative h-full w-full cursor-pointer bg-yellow-600 border-black btnViewMessage"  type="submit" value="Envíar">
+                            </div>
+                    </div>
+                </div>
+                </form>
+        </div>
+
+
+         <!-- DIURNA FUNCIONARIO -->
+         <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-blue-200 absolute" style="display: none;" id="diurna_funcionario_box">
+            <form class="relative h-full w-full">
+                <div class="relative h-1/5 w-full bg-blue-200 text-center">
+                    <div class="relative h-full w-full">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono tittleViewMessage" >MENSAJES</h2>
+                    </div>
+                </div>
+                <div class="relative h-2/5 w-full bg-blue-200">
+                    <div class="absolute h-full w-1/2 float-left bg-blue-200">
+                        <div class="relative h-1/5 w-full bg-blue-100">
+                            <input id="txt_name_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Nombres" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-200">
+                            <input id="txt_lastname_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Apellidos" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-300">
+                            <input id="txt_id_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Identificación" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-400">
+                            <input id="txt_sede_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Sede" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-500">
+                            <input id="txt_jornada_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Jornada" readonly>
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-1/2 left-1/2 bg-blue-200">
+                        <div class="relative h-1/5 w-full bg-blue-100">
+                            <input id="txt_ficha_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Ficha" readonly>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-blue-200">
+                            <input id="txt_program_diurna_Funcionario" class="relative h-full w-full bg-yellow-100 textViewMessage"  type="text" placeholder="Programa" readonly>
+                        </div>
+                        <div class="relative h-3/5 w-full bg-blue-300">
+                            <textarea id="txt_comentario_diurna_Funcionario" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Mensaje" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+                    <div class="relative h-1/5 w-full bg-blue-200">
+                            <div id="box_escalar_diurna_Funcionario" class="absolute h-full w-1/2 float-left" id="formUp_diurna_Funcionario" name="formUp_diurna_Funcionario">
+                                <input id="box_escalar_diurna_Funcionario" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="submit" value="Retornar">
+                            </div>                  
+                        <div class="absolute h-full w-1/2 bg-blue-500 left-1/2">
+                            <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_responder_diurna_Funcionario" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage"  type="button" value="Responder">
+                        </div>
+                    </div>            
+                    <div class="absolute w-full h-1/5 bg-blue-200">
+                        <div class="relative h-full w-full bg-blue-200">
+                            <div class="relative h-full w-1/2 float-left">
+                                <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_volver_diurna_Funcionario" class="relative h-full w-full cursor-pointer bg-yellow-300 border-black btnViewMessage" type="button" value="Volver">
+                            </div>
+                            <div id="box_respuesta_diurna_Funcionario" class="absolute h-full w-1/2 bg-blue-500 float left" style="display: none;">
+                                <textarea id="txt_respuesta_diurna_Funcionario" class="h-full w-full relative bg-yellow-100 resize-none textViewMessage"  placeholder="Respuesta"></textarea>
+                            </div>
+                                <div class="absolute h-full w-1/2 float-left left-1/2" style="display: block;">
+
+                                </div>
+                                <div  class="absolute h-full w-1/2 float-left left-1/2" id="formSend_diurna_Funcionario" style="display: none;" name="formSend_diurna_Funcionario">
+                                    <input onmouseover="dentro(this)" onmouseout="fuera(this)" id="btn_enviar_diurna_Funcionario" class="relative h-full w-full cursor-pointer bg-yellow-600 border-black btnViewMessage"  type="submit" value="Envíar">
+                                </div>
+                        </div>
+                    </div>
+                </form>
+        </div>
+       
+        <script src="js/jquery.js"></script>
+        <script src="js/call_image_Represent.js"></script>
+        <script src="js/events_button_sedes.js"></script>
+        <script src="js/event_button_exit_sedes.js"></script>
+        <script src="js/event_button_exit.js"></script>
+        <script src="js/event_img_jornada.js"></script>
+        <script src="js/event_validar_caracter.js"></script>
+        <script src="js/insert_comment.js"></script>
+        <script src="js/search_comment.js"></script>
+        <script src="js/events_navbar.js"></script>
+        <script src="js/notification.js"></script>
+        <script src="js/code_officer.js"></script>
+        <script src="js/newcode_Vocero.js"></script>
+        <script src="js/newcode_Representante.js"></script>
+        <script src="js/btn_event_vocero.js"></script>        
+        <script src="js/btn_event_representante.js"></script>
+        <script src="js/btn_event_funcionario.js"></script>
+        <script src="js/code_vocero.js"></script>
+        <script src="js/code_representante.js"></script>
+        <script src="js/event_OnMouseButton.js"></script>
+
+    </body>
+</html>

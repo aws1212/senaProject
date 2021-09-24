@@ -1,0 +1,343 @@
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    .tittleNav{
+        font-size: 2.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textNav{
+        font-size: 1.85vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleSedes{
+        font-size: 6vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textSedes{
+        font-size: 4vw;
+        word-wrap: break-word;
+        left: 0%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleMessage{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textDataMessage{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }    
+    .btnDataMessage{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }    
+    .tittleAnswer{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textAnswer{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnAnswer{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleCargo{
+        font-size: 5.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textCargos{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnExitCargos{
+        font-size: 6vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleCode{
+        font-size: 6vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .txtCode{
+        font-size: 4.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnCode{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleRegister{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnRegister{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleNewVocero{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 15%;
+    }
+    .textNewVocero{
+        font-size: 4.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnNewVocero{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleNewRepre{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 15%;
+    }
+    .textNewRepre{
+        font-size: 4.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnNewRepre{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 30%;
+    }
+    .tittleViewMessage{
+        font-size: 6vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 30%;
+    }
+    .textViewMessage{
+        font-size: 4.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnViewMessage{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+    .tittleNav{
+        font-size: 1.7vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textNav{
+        font-size: 1.3vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleSedes{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 0%;
+    }
+    .textSedes{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        left: 0%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleMessage{
+        font-size: 2vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textDataMessage{
+        font-size: 2.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }    
+    .btnDataMessage{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }    
+    .tittleAnswer{
+        font-size: 3vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textAnswer{
+        font-size: 3vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnAnswer{
+        font-size: 2.7vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleCargo{
+        font-size: 4.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textCargos{
+        font-size: 3vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnExitCargos{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleCode{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 0%;
+    }
+    .txtCode{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnCode{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleRegister{
+        font-size: 2.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnRegister{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleNewVocero{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 30%;
+    }
+    .textNewVocero{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnNewVocero{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tittleNewRepre{
+        font-size: 3.7vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 25%;
+    }
+    .textNewRepre{
+        font-size: 3vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnNewRepre{
+        font-size: 4vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 30%;
+    }
+    .tittleViewMessage{
+        font-size: 5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+        top: 10%;
+    }
+    .textViewMessage{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnViewMessage{
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        padding: 0px;
+        margin: 0px;
+    }
+}
